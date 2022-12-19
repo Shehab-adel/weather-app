@@ -4,7 +4,6 @@ import 'package:weather_app/model/weather_wodel.dart';
 class WeatherProvider extends ChangeNotifier {
   WeatherModel? weatherModel;
   String? cityName;
-
   void changeWeatherModel(WeatherModel weatherModel) {
     this.weatherModel = weatherModel;
     notifyListeners();
@@ -15,3 +14,4 @@ class WeatherProvider extends ChangeNotifier {
     notifyListeners();
   }
 }
+
